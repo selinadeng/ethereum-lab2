@@ -40,7 +40,7 @@ running in a browser and our own browser based application.
 
 3) In Remix, choose Solidity and create a new file named it "NameValue.sol".
 
-4) [Paste this code to NameValue.sol](../../blob/master/Lab2PartA/Faucet.sol)
+4) [Paste this code to NameValue.sol](../Lab2PartA/Faucet.sol)
 
 
 5) In Remix, click on "Compile NameValue.sol" on the left sidebar.  Once compilation
