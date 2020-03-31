@@ -292,7 +292,7 @@ be sure to say what digital certificates are normally used for and then explain 
 need them here.
 
 
-:checkered_flag:**To receive credit for Part C, submit your answers to the 13 questions above in a file named Lab2PartC.doc or Lab2PartC.pdf. Each answer will be clearly labelled with the question number (0 through 12). Each answer will be nicely formatted and easy to read.**
+:checkered_flag:**To receive credit for Part C, submit your answers to the 16 questions above in a file named Lab2PartC.doc or Lab2PartC.pdf. Each answer will be clearly labelled with the question number (0 through 15). Each answer will be nicely formatted and easy to read.**
 
 
 :checkered_flag:**Place your three submission documents (Lab2PartA.doc or Lab2PartA.pdf and Lab2PartB.doc or Lab2PartB.pdf and Lab2PartC.doc or Lab2PartC.pdf) into a single directory and zip that directory. Name the zip file <your-andrew-id>Lab2.zip. Submit this single zip file to Canvas.**
