@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Lab2-Part1</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+</head>
+
+<body>
+ <div class="container">
+<h1>Name Value Contract</h1>
+<label for="name" class="col-lg-2 control-label">Name</label>
+ <input id="varName" type="text">
+<label for="name" class="col-lg-2 control-label">Value</label>
+ <input id="varValue" type="text">
+<button id="setbutton">Transmit to blockchain (transact)</button><br><br>
+<button id="getButton">Get Last Transaction (call)</button>
+<h2 id="user"></h2>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script>
+
+if (typeof web3 !== 'undefined')
+{
+ web3 = new Web3(web3.currentProvider);
+ }  else {
+ // set the provider you want from Web3.providers
+web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
+ }
+
+ web3.eth.defaultAccount = web3.eth.accounts[0];
+
+ var ValueContract = web3.eth.contract([
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "setValues",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getValues",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]);
+
+var Values = ValueContract.at('PASTE CONTRACT ADDRESS HERE');
+
+ $("#setbutton").click(function() {
+ Values.setValues($("#varName").val(), $("#varValue").val());
+});
+
+ $("#getButton").click(function() {
+ Values.getValues(function(error, result){
+	if(!error){
+		$("#user").html(result[0]+' ('+result[1]+' value)');
+		console.log(result);
+	} else {
+		console.error(error);
+	}})});
+
+ </script>
+</body>
+</html>
