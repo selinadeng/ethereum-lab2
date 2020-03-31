@@ -201,82 +201,83 @@ Remix Problems:
 In the problems below, Alice, Bob, Charlie, Donna and Emily are associated with the Ganache accounts account[0], account[1], account[2], account[3] and account[4] respectively. Each has 100 ether in their accounts.
 0. Alice deploys an instance of the MyAdvancedToken contract to Ganache. She gives it the name "Alice Coin" and the symbol "AC" and an initial supply of 1300 tokens.  
 
-+ Show Alice's address.
-+ Show the transaction receipt returned to the browser.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Alice's address.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt returned to the browser.
 
 1. Alice allows Bob to spend 100 tokens on her behalf.
 
-+ Show Bob's address.
-+ Show the transaction receipt logs returned to the browser.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Bob's address.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs returned to the browser.
 
 2. Alice allows Charlie to spend 50 tokens on her behalf.
 
-+ Show Charlie's address.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Charlie's address.
 
-+ Show the transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
 
 3. Bob sends 50 of Alice's tokens to Donna.
 
-+ Show Donna's address.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Donna's address.
 
-+ Show the transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
 
 4. Charlie sends 20 of Alice's tokens to Emily and burns the remaining tokens that Alice provided to Charlie.
 
-+ Show Emily's address.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Emily's address.
 
-+ Show the first transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the first transaction receipt logs.
 
-+ Show the second transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the second transaction receipt logs.
 
 5. Emily sends 5 of her tokens to Bob.
 
-+ Show the transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
 
 6. Bob sends his 5 tokens to Alice.
 
-+ Show the transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
 
 7. Bob returns his remaining allowance to Alice.
 
-+ Show the transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
 
 8. Bob attempts to send 10 tokens to Donna.
 
-+ Show the error message.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the error message.
 
 9. Alice sends 100 tokens to the contract without increasing the totalSupply. She also sets the buy price to 1 ether and the sell price to 2 ether.
 
-+ Show the first transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the first transaction receipt logs.
 
-+ Show the second transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the second transaction receipt logs.
 
 10. Donna buys 50 ether worth of tokens.
 
-+ Show the transaction receipt logs.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
 
 11. Find the token balance of each of our players:
-Alice
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alice
 
-Bob
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bob
 
-Charlie
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charlie
 
-Donna
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donna
 
-Emily  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emily  
 
-contract  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contract  
 
 12. What is the ether balance (to two decimal digits) for:
 
-Alice
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alice
 
-Bob
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bob
 
-Charlie
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charlie
 
-Donna
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donna
 
 13. Alice turns control of the contract to the contract itself. What is
 the transaction hash?
