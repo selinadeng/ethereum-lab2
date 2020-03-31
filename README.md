@@ -22,14 +22,14 @@ Part C. Remix deployment and interaction with an ERC20 Token contract
 
 ## Part A. Interacting with Ganache using the World Wide Web and Remix 5 Points
 
-
+This lab exercise is, essentially, a client server application. Ganache is
+the server and is used to hold a single instance blockchain. We
+will visit the server with two clients - the Remix application
+running in a browser and our own browser based application.
 
 1) In Lab 1, you installed Ganache and you will be using it again here.
    Run Ganache Quickstart and leave it running for the remainder of Part A.
-   This lab exercise is, essentially, a client server application. Ganache is
-   the server and is used to hold a single instance blockchain. We
-   will visit the server with two clients - the Remix application
-   running in a browser and our own browser based application.
+
 
 2) We will be using the Remix IDE to compile Solidity source code. We will also
    use Remix to deploy byte code to Ganache and interact with the contract.
