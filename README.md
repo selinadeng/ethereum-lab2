@@ -46,7 +46,7 @@ running in a browser and our own browser based application.
 5) In Remix, click on "Compile NameValue.sol" on the left sidebar.  Once compilation
    is complete, view the ABI. The ABI or Application Binary Interface is a
    machine readable description of the public features of the contract. With this
-   machine readable description, the right tools can assist in making calls on the remote procedure. You might also take a peek at the Bytecode. This is the code that we want to deploy to Ganache. It is the compiled Solidity code.
+   machine readable description, the right tools can assist in making calls on the remote procedure. You might also take a peek at the bytecode. This is the code that we want to deploy to Ganache. It is the compiled Solidity code.
 
 6) Click the "Deploy and run transactions" icon on the left sidebar. The default environment is set to "Javascript VM". The NameValue.sol contract can be tested in Remix using the Javascript VM environment. However, the Javascript VM environment is only used for local testing.  In this lab we will be using a Web3 Provider that allows us to connect to a running node. In this case, we want to connect to Ganache.
 
@@ -66,16 +66,17 @@ Our next task is to visit the contract with a web page.
 
 7) The command "truffle init" requires that it runs in an empty directory.
 Make an empty directory named Lab2PartA and enter the following three commands:
-
+```
    truffle init
    npm init      take the suggested defaults
    npm install dotenv truffle-wallet-provider ethereumjs-wallet
+```
 
-8) Within the directory named Lab2PartA, create a file named index.html
-and copy the code found here: <link to Lab2PartA/index.html>
+8) Within the directory named Lab2PartA, create a file named index.html and [copy the code found here.](../../blob/master/Lab2PartA/index.html)
 
-9) Within your Lab2PartA directory, create a file named index.css and copy
-   the code found here: <link to Lab2PartA/index.css>
+
+9) Within the directory named Lab2PartA, create a file named index.css and [copy the code found here.](../../blob/master/Lab2PartA/index.css)
+
 
 10) Within the HTML file, we need to point to your deployed contract on Ganache.
    In Remix, you will see "Deployed Contracts". Just below the "Deploy Contracts"
@@ -95,8 +96,12 @@ This screen shot will be contained in a Word document or PDF with the name
 Lab2PartA.doc or Lab2PartA.pdf.**
 
 ## Part B. Truffle deployment and interaction with an ERC20 Token 10 Points
-
-Before beginning this part, take some time and study the ERC20 token contract here: <Link to PartB/MyAdvancedToken.sol> . Look over each method and read the documentation. The documentation is meant to be instructional and is aimed at helping you to complete this part.
+
+[Before beginning this part, take some time and study the ERC20 token contract
+ here.](../../blob/master/Lab2PartB/MyAdvancedToken.sol)
+
+
+Look over each method and read the documentation. The documentation is meant to be instructional and is aimed at helping you to complete this part.
 Within each method, there is code that will help you interact with the deployed contract from within the truffle console.
 
 You will deploy this contract using the same steps that you used in Lab 1. You need to revisit those instructions. Be sure to configure Ganache by
@@ -105,14 +110,9 @@ You will deploy this contract using the same steps that you used in Lab 1. You 
 
 2) creating a new Workspace when Ganache starts up.  
 
-There is one significant difference in this deployment. MyAdvancedToken has a constructor that is passed arguments. So, we will use this file for 2_deploy_migrations.js. Notice the data that we are passing along for the deployment. <Link to PartB/2_deploy_migrations.js>
-```
-// 2_deploy_migrations.js Javascript to deploy MyAdvancedToken.sol
-var aliceToken = artifacts.require("./MyAdvancedToken.sol");
-module.exports = function(deployer) {
-  deployer.deploy(aliceToken,1300, "Alice Coin","AC");
-};
-```
+There is one significant difference in this deployment. The MyAdvancedToken contract has a constructor that is passed arguments. So, we will use [this file for 2_deploy_migrations.js.](../../blob/master/Lab2PartB/2_deploy_migrations.js)
+
+Notice the data that we are passing to the constructor upon deployment.
 
 Once deployed, you will need to answer the following questions by using
 the truffle console.
@@ -256,18 +256,27 @@ In the problems below, Alice, Bob, Charlie, Donna and Emily are associated with
 + Show the transaction receipt logs.
 
 11. Find the token balance of each of our players:
-    Alice  
-    Bob  
-    Charlie  
-    Donna  
-    Emily  
-    contract  
+Alice
+
+Bob
+
+Charlie
+
+Donna
+
+Emily  
+
+contract  
 
-12. What is the ether balance (to two decimal digits) of
-    Alice
-    Bob    
-    Charlie
-    Donna
+12. What is the ether balance (to two decimal digits) for:
+
+Alice
+
+Bob
+
+Charlie
+
+Donna
 
 13. Alice turns control of the contract to the contract itself. What is
 the transaction hash?
@@ -282,14 +291,14 @@ be sure to say what digital certificates are normally used for and then explain 
 need them here.
 
 
-:checkered_flag:**To receive credit for Part C, submit your answers to the 13 questions above in a file named Lab2PartC.doc or Lab2PartC.pdf. Each answer will be clearly labelled with the question number (0 through 12).**
+:checkered_flag:**To receive credit for Part C, submit your answers to the 13 questions above in a file named Lab2PartC.doc or Lab2PartC.pdf. Each answer will be clearly labelled with the question number (0 through 12). Each answer will be nicely formatted and easy to read.**
 
 
 :checkered_flag:**Place your three submission documents (Lab2PartA.doc or Lab2PartA.pdf and Lab2PartB.doc or Lab2PartB.pdf and Lab2PartC.doc or Lab2PartC.pdf) into a single directory and zip that directory. Name the zip file <your-andrew-id>Lab2.zip. Submit this single zip file to Canvas.**
 
 
 ## Grading rubric for the materials in the submission directory
-One zip file will be submitted on Canvas for grading.
+One zip file named Lab2.zip will be submitted on Canvas for grading.
 
 + 4 points for successful completion of Part A
 + 1 point for correct submission and clear labelings of Part A
