@@ -38,7 +38,7 @@ running in a browser and our own browser based application.
 
    The Metamask wallet was installed in Lab 1.
 
-3) In Remix, choose Solidity and create a new file named it "NameValue.sol".
+3) In Remix, choose Solidity and create a new file named "NameValue.sol".
 
 4) [Paste this code to NameValue.sol](../../blob/master/Lab2PartA/NameValue.sol)
 
