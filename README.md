@@ -50,19 +50,19 @@ running in a browser and our own browser based application.
 
 6) Click the "Deploy and run transactions" icon on the left sidebar. The default environment is set to "Javascript VM". The NameValue.sol contract can be tested in Remix using the Javascript VM environment. However, the Javascript VM environment is only used for local testing.  In this lab we will be using a Web3 Provider that allows us to connect to a running node. In this case, we want to connect to Ganache.
 
-In Remix, visit the Environment selection box and choose "Web3 Provider". You will be prompted with an "External Node Request" box. Your Web3 Provider Endpoint is http://localhost:7545. See the Ganache user interface and verify the port (7545) is correct. A Web3 Provider knows how to talk to a running node.
+&nbsp;&nbsp;&nbsp;&nbsp;In Remix, visit the Environment selection box and choose "Web3 Provider". You will be prompted with an "External Node Request" box. Your Web3 Provider Endpoint is http://localhost:7545. See the Ganache user interface and verify the port (7545) is correct. A Web3 Provider knows how to talk to a running node.
 
-In the next step, the Solidity contract will be deployed to Ganache.
+&nbsp;&nbsp;&nbsp;&nbsp;In the next step, the Solidity contract will be deployed to Ganache.
 
-Click on the Deploy button. Note how the first account in Ganache has
+&nbsp;&nbsp;&nbsp;&nbsp;Click on the Deploy button. Note how the first account in Ganache has
 spent a little Eth. It costs money to deploy a contract. Notice too, on Ganache, the Transactions tab shows a contract creation transaction. By clicking on the transaction itself, you can see the hash of the transaction, the bytecode of the contract, and other details regarding the costs of things.
 
-In Remix, under "Deployed Contracts", "NameValue" will be listed. Expand that node and expand the setValues node (you have to drill down) and you will be able to get and set values within your contract. Try it using Remix. Use the Transact button to set several name value pairs and "getValues" to get the last values back.
+&nbsp;&nbsp;&nbsp;&nbsp;In Remix, under "Deployed Contracts", "NameValue" will be listed. Expand that node and expand the setValues node (you have to drill down) and you will be able to get and set values within your contract. Try it using Remix. Use the Transact button to set several name value pairs and "getValues" to get the last values back.
 Look at the cost (in gas used) that a "set" operation requires. Also, note the call on "get" is not a transaction at all - it's a "call", and it costs nothing to execute. The idea is that a "call" only interacts with a single Ethereum node. A transaction, on the other hand, requests that all nodes on the peer to peer network change their state.
 
-Notice, under "Deployed Contracts" in Remix, the contract has an address. That address should match the Created Contracts address shown under Transactions in Ganache.
+&nbsp;&nbsp;&nbsp;&nbsp;Notice, under "Deployed Contracts" in Remix, the contract has an address. That address should match the Created Contracts address shown under Transactions in Ganache.
 
-Our next task is to visit the contract with a web page.
+&nbsp;&nbsp;&nbsp;&nbsp;Our next task is to visit the contract with a web page.
 
 7) The command "truffle init" requires that it runs in an empty directory.
 Make an empty directory named Lab2PartA and enter the following three commands:
