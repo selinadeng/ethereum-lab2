@@ -82,9 +82,11 @@ Make an empty directory named Lab2PartA and enter the following three commands:
    In Remix, you will see "Deployed Contracts". Just below the "Deploy Contracts"
    box, you will see "NameValues" listed. Click on the copyboard icon and paste
    the contract address in your HTML at the line:
+```
 
    var Values = ValueContract.at('PASTE CONTRACT ADDRESS HERE');
 
+```
 16) Click on index.html on your system and you should get a simple user interface
 to interact with the contract deployed on your local Ganache blockchain. You can enter a name and a value that you want to send and store in the contract. You can view the last transaction by clicking the "Get Last Transaction (call)" button.
 
