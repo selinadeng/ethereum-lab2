@@ -156,7 +156,7 @@ Alice = web3.eth.account[0]
 
 13. Bob attempts to send 10 tokens to Donna. Show the truffle console command and the transaction receipt or any errors that may occur.
 
-14. Alice sends 100 tokens to the contract without increasing the totalSupply. She also sets the buy price to 1 ether and the sell price to 2 ether. Paste here the truffle console commands and the transaction receipts.
+14. Alice sends 100 tokens to the contract without increasing the totalSupply. She also sets the buy price to 1 ether and the sell price to 2 ether. Paste here the truffle console commands and the transaction receipts.
 
 15. Show the command to query the contract's ether balance (not the token balance). Also, show the ether balance.
 
