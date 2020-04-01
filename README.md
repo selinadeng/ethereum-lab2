@@ -62,7 +62,7 @@ Look at the cost (in gas used) that a "set" operation requires. Also, note the c
 
 11) Notice, under "Deployed Contracts" in Remix, the contract has an address. That address should match the Created Contracts address shown under Transactions in Ganache.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our next task is to visit the contract with a web page.
+Our next task is to visit the contract with a web page.
 
 12) The command "truffle init" requires that it runs in an empty directory.
 Make an empty directory named Lab2PartA and enter the following three commands:
