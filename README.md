@@ -93,7 +93,7 @@ to interact with the contract deployed on your local Ganache blockchain. You can
 Check on Ganache and see if it is registering the transactions.
 
 :checkered_flag:**To receive credit for Part A, submit a screen shot of your browser showing
-that the last transaction had the name of <your name> and the value of 100.
+that the last transaction had the name of your andrew ID and the value of 100.
 This screen shot will be contained in a Word document or PDF with the name
 Lab2PartA.doc or Lab2PartA.pdf.**
 
