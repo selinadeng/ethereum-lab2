@@ -395,7 +395,7 @@ contract TokenERC20 {
 
         Called from truffle with:
 
-        Alice (sending transaction) transfers 5 tokens to Bob
+        Alice (sending transaction) transfers 50 tokens to Bob
 
         app.transfer(Bob,'50000000000000000000').then( n => {c = n})
 
@@ -411,13 +411,13 @@ contract TokenERC20 {
 
         v = c.logs[0].args.value
 
-        v.toString()   shows '5000000000000000000'
+        v.toString()   shows '50000000000000000000'
 
 
 
 
 
-        Bob transfers 5 tokens to Charlie.
+        Bob transfers 50 tokens to Charlie.
 
         Bob's address included in the transaction.
 
