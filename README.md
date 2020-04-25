@@ -125,7 +125,7 @@ Truffle Problems
 
 In the problems below, Alice, Bob, Charlie, Donna and Emily are associated with the Ganache accounts account[0], account[1], account[2], account[3] and account[4] respectively. Each begins with 100 ether in his or her account. Using web3.eth.accounts, set all of these names to the corresponding addresses, e.g.,
 ```
-Alice = web3.eth.account[0]
+Alice = web3.eth.accounts[0]
 ```
 
 0. Alice has deployed an instance of the MyAdvancedToken contract to Ganache. She gave it the name "Alice Coin" and the symbol AC and an initial supply of 1300 tokens. Show two commands, that when executed in the truffle console, display the number of tokens (Alice Coins) held in her account. Also show the value (number of tokens) displayed by the second command. For this question you are required to call the balanceOf() method on the contract.
