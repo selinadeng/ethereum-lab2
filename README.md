@@ -1,6 +1,6 @@
 ## Spring 2022 Developing Blockchain Use Cases Lab 2                             
 ### Carnegie Mellon University                  
-### Due: 11:59 PM Tuesday, April 12, 2022                                
+### Due: 11:59 PM Monday, April 11, 2022                                
 ### 20 Points
 ### Lab Assistance provided by Michael McCarthy
 ### Email: mm6@andrew.cmu.edu
