@@ -106,9 +106,9 @@ Lab2PartA.doc or Lab2PartA.pdf.**
 Look over each method and read the documentation. The documentation is meant to be instructional and is aimed at helping you to complete this part.
 Within each method, there is code that will help you interact with the deployed contract from within the truffle console.
 
-You will deploy this contract using the same steps that you used in Lab 1 Part 4. You need to revisit those instructions. Be sure to configure Ganache by
+You will deploy this contract using the same steps that you used in lab 1 part 3. You need to revisit those instructions. Be sure to configure Ganache by
 
-1) modifying the truffle-config.js file (as you did in lab 1, part 4) and by
+1) modifying the truffle-config.js file (as you did in lab 1, part 3) and by
 
 2) creating a new Workspace when Ganache starts up.  
 
