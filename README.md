@@ -119,7 +119,7 @@ Notice the data that we are passing to the constructor upon deployment.
 Once deployed, you will need to answer the following questions by using
 the truffle console.
 
-:checkered_flag:**Before beginning, see the note below on how to submit Part B.**
+:checkered_flag:**Before beginning, see the checkered flag below that describes how to submit Part B.**
 
 Truffle Problems
 

@@ -1,3 +1,4 @@
+// 2_deploy_migrations.js
 // Javascript to deploy MyAdvancedToken.sol
 var aliceToken = artifacts.require("./MyAdvancedToken.sol");
 module.exports = function(deployer) {
