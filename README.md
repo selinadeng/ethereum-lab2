@@ -2,43 +2,64 @@
 ### Carnegie Mellon University                  
 ### Due: 11:59 PM Monday, April 11, 2022                                
 ### 20 Points
-### Lab Assistance provided by Michael McCarthy
-### Email: mm6@andrew.cmu.edu
+### Lab Assistance provided by Michael McCarthy, Abhraneil Chandra
+### McCarthy Email: mm6@andrew.cmu.edu
+### Chandra Email: abhranec@andrew.cmu.edu
 ### Zoom URL: See Canvas and look under "Pages".
 
-**Learning Objectives:** The objectives of this lab are to familiarize the student
-with some important Ethereum tools and to develop a detailed understanding
-of an ERC20 token contract.
-
-We will be reviewing the ERC20 contract in class.
-
-## Lab2 Outline
-
+**Learning Objectives:** The objectives of this lab are to familiarize the student
+
+with some important Ethereum tools and to develop a detailed understanding
+
+of an ERC20 token contract.
+
+
+
+We will be reviewing the ERC20 contract in class.
+
+
+
+## Lab2 Outline
+
+
+
 Part A. Interacting with Ganache using the World Wide Web and Remix
-
+
+
 Part B. Truffle deployment and interaction with an ERC20 Token contract.
-
+
+
 Part C. Remix deployment and interaction with an ERC20 Token contract
-
+
+
 ## Part A. Interacting with Ganache using the World Wide Web and Remix 5 Points
 
 This lab exercise is, essentially, a client server application. Ganache is
 the server and is used to hold a single instance blockchain. We
 will visit the server with two clients - the Remix application
 running in a browser and our own browser based application.
-
+
+
 1) In Lab 1, you installed Ganache and you will be using it again here.
-   Run Ganache Quickstart and leave it running for the remainder of Part A.
+   Run Ganache Quickstart and leave it running for the remainder of Part A.
 
-
-2) We will be using the Remix IDE to compile Solidity source code. We will also
-   use Remix to deploy byte code to Ganache and interact with the contract.
-   Remix runs in your browser. You don't need to install it.
-   Visit https://remix.ethereum.org/ and run Remix in the same browser where you installed your Metamask wallet.
 
-   The Metamask wallet was installed in Lab 1.
 
-3) In Remix, choose Solidity and create a new file named "NameValue.sol".
+
+2) We will be using the Remix IDE to compile Solidity source code. We will also
+
+   use Remix to deploy byte code to Ganache and interact with the contract.
+
+   Remix runs in your browser. You don't need to install it.
+
+
+   Visit https://remix.ethereum.org/
+ and run Remix in the same browser where you installed your Metamask wallet.
+
+   The Metamask wallet was installed in Lab 1.
+
+
+3) In Remix, choose Solidity and create a new file named "NameValue.sol". Be careful to choose a compiler version that is supported by the code ( solidity >=0.4.22 <0.6.0 )
 
 4) [Paste this code to NameValue.sol](../../blob/master/Lab2PartA/NameValue.sol)
 
@@ -57,7 +78,10 @@ running in a browser and our own browser based application.
 9) Click on the Deploy button. Note how the first account in Ganache has
 spent a little Eth. It costs money to deploy a contract. Notice too, on Ganache, the Transactions tab shows a contract creation transaction. By clicking on the transaction itself, you can see the hash of the transaction, the bytecode of the contract, and other details regarding the costs of things.
 
-10) In Remix, under "Deployed Contracts", "NameValue" will be listed. Expand that node and expand the setValues node (you have to drill down) and you will be able to get and set values within your contract. Try it using Remix. Use the Transact button to set several name value pairs and "getValues" to get the last values back.
+10) In Remix, under "Deployed Contracts",
+ "NameValue" will be listed. Expand that node and expand the setValues
+ node (you have to drill down) and you will be able to get and set values within your contract.
+ Try it using Remix. Use the Transact button to set several name value pairs and "getValues" to get the last values back.
 Look at the cost (in gas used) that a "set" operation requires. Also, note the call on "get" is not a transaction at all - it's a "call", and it costs nothing to execute. The idea is that a "call" only interacts with a single Ethereum node. A transaction, on the other hand, requests that all nodes on the peer to peer network change their state.
 
 11) Notice, under "Deployed Contracts" in Remix, the contract has an address. That address should match the Created Contracts address shown under Transactions in Ganache.
@@ -96,17 +120,25 @@ Check on Ganache and see if it is registering the transactions.
 that the last transaction had the name of your andrew ID and the value of 100.
 This screen shot will be contained in a Word document or PDF with the name
 Lab2PartA.doc or Lab2PartA.pdf.**
-
-## Part B. Truffle deployment and interaction with an ERC20 Token 10 Points
+
+
+## Part B. Truffle deployment and interaction with an ERC20 Token 10 Points
+
 
 [Before beginning this part, take some time and study the ERC20 token contract
  here.](../../blob/master/Lab2PartB/MyAdvancedToken.sol)
 
 
-Look over each method and read the documentation. The documentation is meant to be instructional and is aimed at helping you to complete this part.
-Within each method, there is code that will help you interact with the deployed contract from within the truffle console.
-
-You will deploy this contract using the same steps that you used in lab 1 part 3. You need to revisit those instructions. Be sure to configure Ganache by
+Look over each method and read the documentation. The documentation is
+ meant to be instructional and is aimed at helping you to complete this part.
+
+Within each method, there is code that will help you interact with the
+ deployed contract from within the truffle console.
+
+
+
+You will deploy this contract using the same steps that you used in lab 1 part 3.
+ You need to revisit those instructions. Be sure to configure Ganache by
 
 1) modifying the truffle-config.js file (as you did in lab 1, part 3) and by
 
@@ -116,68 +148,118 @@ There is one significant difference in this deployment. The MyAdvancedToken cont
 
 Notice the data that we are passing to the constructor upon deployment.
 
-Once deployed, you will need to answer the following questions by using
+Once deployed, you will need to answer the following questions by using
+
 the truffle console.
 
 :checkered_flag:**Before beginning, see the checkered flag below that describes how to submit Part B.**
-
-Truffle Problems
-
-In the problems below, Alice, Bob, Charlie, Donna and Emily are associated with the Ganache accounts account[0], account[1], account[2], account[3] and account[4] respectively. Each begins with 100 ether in his or her account. Using web3.eth.accounts, set all of these names to the corresponding addresses, e.g.,
+
+
+Truffle Problems
+
+
+
+In the problems below, Alice, Bob, Charlie, Donna and Emily are associated
+ with the Ganache accounts account[0], account[1], account[2], account[3]
+ and account[4] respectively. Each begins with 100 ether in his or her account.
+ Using web3.eth.accounts, set all of these names to the corresponding addresses, e.g.,
 ```
 Alice = web3.eth.accounts[0]
-```
 
-0. Alice has deployed an instance of the MyAdvancedToken contract to Ganache. She gave it the name "Alice Coin" and the symbol AC and an initial supply of 1300 tokens. Show two commands, that when executed in the truffle console, display the number of tokens (Alice Coins) held in her account. Also show the value (number of tokens) displayed by the second command. For this question you are required to call the balanceOf() method on the contract.
+```
+
+0. Alice has deployed an instance of the MyAdvancedToken contract to
+ Ganache. She gave it the name "Alice Coin" and the symbol AC and an initial
+ supply of 1300 tokens.
+ Show two commands, that when executed in the truffle console, display the number of tokens (Alice Coins) held in her account. Also show the value (number of tokens) displayed by the second command. For this question you are required to call the balanceOf() method on the contract.
 
 1. Show two commands, that when executed in the truffle console, display the total supply of tokens. For this question you are required to access the totalSupply public variable.
 
 2. Alice would like to know her balance in Ethereum. Show the Truffle console commands that will retrieve and display her Ethereum balance.
-
-3. Alice allows Bob to spend 100 tokens on her behalf. Show the truffle console command and the transaction receipt. Also, show Alice's Ethereum balance after she runs the transaction.
+
+
+3. Alice allows Bob to spend 100 tokens on her behalf. Show the
+ truffle console command and the transaction receipt.
+ Also, show Alice's Ethereum balance after she runs the transaction.
 
 4. Step number 3 should have generated an event on Ganache. Show the three values of _owner, _spender, and _value that are available under the Events tab.
 
-5. Alice allows Charlie to spend 50 tokens on her behalf. Show the truffle console command and the transaction receipt.
+5. Alice allows Charlie to spend 50 tokens on her behalf. Show the
+ truffle console command and the transaction receipt.
+
 
 6. Show two commands, that when executed in the truffle console, display the number of tokens that Alice has in her account. Also, show the number of tokens displayed by the second command (her token balance). Use the balanceOf() method.
 
-7. Bob sends 50 of Alice's tokens to Donna. Show the truffle console command and the transaction receipt. Also, show Bob's Ethereum balance after he runs the transaction.
-
-8. Charlie sends 20 of Alice's tokens to Emily and burns the remaining tokens that Alice provided to Charlie. Show the truffle console commands and the transaction receipts.
+7. Bob sends 50 of Alice's tokens to Donna. Show the
+ truffle console command and the transaction receipt.
+ Also, show Bob's Ethereum balance after he runs the transaction.
+
+
+8. Charlie sends 20 of Alice's tokens to Emily and burns the
+ remaining tokens that Alice provided to Charlie. Show the
+ truffle console commands and the transaction receipts.
+
 
 9. Show the command needed to access the totalSupply variable and show the number of tokens remaining.
 
-10. Emily sends 5 of her tokens to Bob. Paste here the truffle console command and the transaction receipt. Also, show Bob's token balance after Emily runs the transaction.
-
-11. Bob sends his 5 tokens to Alice. Paste here the truffle console command and the transaction receipt.
-
-12. Bob returns his remaining allowance to Alice. Show the truffle console command and the transaction receipt. Also, show Bob's token balance after he runs the transaction.
-
-13. Bob attempts to send 10 tokens to Donna. Show the truffle console command and the transaction receipt or any errors that may occur.
-
-14. Alice sends 100 tokens to the contract without increasing the totalSupply. She also sets the buy price to 1 ether and the sell price to 2 ether. Paste here the truffle console commands and the transaction receipts.
+10. Emily sends 5 of her tokens to Bob. Paste here the
+ truffle console command and the transaction receipt.
+ Also, show Bob's token balance after Emily runs the transaction.
+
+
+11. Bob sends his 5 tokens to Alice. Paste here the
+ truffle console command and the transaction receipt.
+
+
+
+12. Bob returns his remaining allowance to Alice. Show the
+ truffle console command and the transaction receipt.
+ Also, show Bob's token balance after he runs the transaction.
+
+
+13. Bob attempts to send 10 tokens to Donna. Show the
+ truffle console command and the transaction receipt or any errors
+ that may occur.
+
+
+
+14. Alice sends 100 tokens to the contract without increasing
+ the totalSupply. She also sets the buy price to 1 ether and the
+ sell price to 2 ether. Paste here the truffle console commands and the transaction receipts.
+
 
 15. Show the command to query the contract's ether balance (not the token balance). Also, show the ether balance.
-
-16. Donna buys 50 ether worth of tokens. Show the truffle console command and the transaction receipt.
+
+
+16. Donna buys 50 ether worth of tokens. Show the
+ truffle console command and the transaction receipt.
+
 
 17. Donna no longer enjoys her tokens and wants to sell as many as she can back to the contract. Show the command she uses to sell her tokens and show the returned receipt.
 
-18. Alice wants to have her contract "live free". So, she turns over control of the contract to the contract itself. Show the command she uses to free her contract and show the returned receipt.
+
+18. Alice wants to have her contract "live free". So, she turns over control of the contract to the contract itself. Show the command she uses to free her contract and show the returned receipt.
 
 19. Alice decides that she wants to mint 5 additional tokens and give them to Bob (increasing the total supply of tokens by 5). Show the command that she would try to use and show any error that may result.
 
 
-20. Find the token balance of each of our players:
-    Alice _________
-    Bob   _________
-    Charlie _______
-    Donna _________
-    Emily _________
+20. Find the token balance of each of our players:
+
+    Alice _________
+
+    Bob   _________
+
+    Charlie _______
+
+    Donna _________
+
+    Emily _________
+
     contract ______
-
-21. What is the ether balance of each of our players:
+
+
+21. What is the ether balance of
+ each of our players:
 
     Alice _________
 
@@ -193,72 +275,121 @@ Alice = web3.eth.accounts[0]
 
 :checkered_flag:**To receive credit for Part B, submit your answers to the 22 questions above in a file named Lab2PartB.doc or Lab2PartB.pdf. Each answer will be clearly labelled with the question number (0 through 21).**
 
-## Part C. Remix deployment and interaction with an ERC20 Token 5 Points
-
-In this Part, you will deploy the same MyAdvancedToken contract to Ganache using Remix.
-Once deployed, you will need to answer the following questions by using Remix. Paste your solutions into Lab2PartC.doc or Lab2PartC.pdf.
-
-Remix Problems:
-
-In the problems below, Alice, Bob, Charlie, Donna and Emily are associated with the Ganache accounts account[0], account[1], account[2], account[3] and account[4] respectively. Each has 100 ether in their accounts.
-0. Alice deploys an instance of the MyAdvancedToken contract to Ganache. She gives it the name "Alice Coin" and the symbol "AC" and an initial supply of 1300 tokens.  
+## Part C. Remix deployment and interaction with an ERC20 Token 5 Points
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Alice's address.
+
+
+In this Part, you will deploy the same MyAdvancedToken contract to Ganache using Remix.
+
+Once deployed, you will need to answer the following questions by using
+ Remix. Paste your solutions into Lab2PartC.doc or Lab2PartC.pdf.
+
+
+Remix Problems
+:
+
+
+In the problems below, Alice, Bob, Charlie, Donna and Emily are associated
+ with the Ganache accounts account[0], account[1], account[2], account[3]
+ and account[4] respectively. Each has 100 ether in their accounts.
+
+0. Alice deploys an instance of the MyAdvancedToken contract to
+ Ganache. She gives it the name "Alice Coin" and the symbol "AC" and an initial supply of 1300 tokens.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Alice's address.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt returned to the browser.
-
-1. Alice allows Bob to spend 100 tokens on her behalf.
+
+
+1. Alice allows Bob to spend 100 tokens on her behalf.
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Bob's address.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs returned to the browser.
 
-2. Alice allows Charlie to spend 50 tokens on her behalf.
-
+2. Alice allows Charlie to spend 50 tokens on her behalf.
+
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Charlie's address.
-
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
 
-3. Bob sends 50 of Alice's tokens to Donna.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Donna's address.
-
+3. Bob sends 50 of Alice's tokens to Donna.
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Donna's address.
+
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
-
-4. Charlie sends 20 of Alice's tokens to Emily and burns the remaining tokens that Alice provided to Charlie.
-
+
+
+4. Charlie sends 20 of Alice's tokens to Emily and burns the
+ remaining tokens that Alice provided to Charlie.
+
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Emily's address.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the first transaction receipt logs.
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the first transaction receipt logs.
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the second transaction receipt logs.
-
-5. Emily sends 5 of her tokens to Bob.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
-
-6. Bob sends his 5 tokens to Alice.
-
+
+5. Emily sends 5 of her tokens to Bob.
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
-
-7. Bob returns his remaining allowance to Alice.
-
+
+
+
+6. Bob sends his 5 tokens to Alice.
+
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
-
+
+
+7. Bob returns his remaining allowance to Alice.
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
+
+
 8. Bob attempts to send 10 tokens to Donna.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the error message.
-
-9. Alice sends 100 tokens to the contract without increasing the totalSupply. She also sets the buy price to 1 ether and the sell price to 2 ether.
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the error message.
+
+
+
+9. Alice sends 100 tokens to the contract without increasing
+ the totalSupply. She also sets the buy price to 1 ether and the
+ sell price to 2 ether.
+
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the first transaction receipt logs.
-
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the second transaction receipt logs.
-
-10. Donna buys 50 ether worth of tokens.
-
+
+
+10. Donna buys 50 ether worth of tokens.
+
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show the transaction receipt logs.
-
-11. Find the token balance of each of our players:
+
+
+11. Find the token balance of each of our players:
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alice
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bob
@@ -270,7 +401,8 @@ In the problems below, Alice, Bob, Charlie, Donna and Emily are associated with
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emily  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contract  
-
+
+
 12. What is the ether balance (to two decimal digits) for:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alice
