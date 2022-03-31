@@ -128,21 +128,18 @@ Lab2PartA.doc or Lab2PartA.pdf.**
 [Before beginning this part, take some time and study the ERC20 token contract
  here.](../../blob/master/Lab2PartB/MyAdvancedToken.sol)
 
-
 Look over each method and read the documentation. The documentation is
  meant to be instructional and is aimed at helping you to complete this part.
 
 Within each method, there is code that will help you interact with the
  deployed contract from within the truffle console.
 
+You will deploy this contract using the same steps that you used in lab 1 part 3. You will need to change names when appropriate. Revisit the Lab 1 Part 3 instructions. Be sure to configure Ganache by
 
+1) creating a new Workspace when Ganache starts up.
+and by
+2) including the truffle-config.js file (as you did in lab 1, part 3).
 
-You will deploy this contract using the same steps that you used in lab 1 part 3.
- You need to revisit those instructions. Be sure to configure Ganache by
-
-1) modifying the truffle-config.js file (as you did in lab 1, part 3) and by
-
-2) creating a new Workspace when Ganache starts up.  
 
 There is one significant difference in this deployment. The MyAdvancedToken contract has a constructor that is passed arguments. So, we will use [this file for 2_deploy_migrations.js.](../../blob/master/Lab2PartB/2_deploy_migrations.js)
 
