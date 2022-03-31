@@ -136,7 +136,7 @@ Within each method, there is code that will help you interact with the
 
 You will deploy this contract using the same steps that you used in lab 1 part 3. You will need to change names when appropriate. Revisit the Lab 1 Part 3 instructions. Be sure to configure Ganache by
 
-1) creating a new Workspace when Ganache starts up.
+1) creating a new Workspace when Ganache starts up
 and by
 2) including the truffle-config.js file (as you did in lab 1, part 3).
 
