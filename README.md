@@ -71,7 +71,7 @@ running in a browser and our own browser based application.
 
 6) Click the "Deploy and run transactions" icon on the left sidebar. The default environment is set to "Javascript VM". The NameValue.sol contract can be tested in Remix using the Javascript VM environment. However, the Javascript VM environment is only used for local testing.  In this lab we will be using a Web3 Provider that allows us to connect to a running node. In this case, we want to connect to Ganache.
 
-7) In Remix, visit the Environment selection box and choose "Web3 Provider". You will be prompted with an "External Node Request" box. Your Web3 Provider Endpoint is http://localhost:7545. See the Ganache user interface and verify the port (7545) is correct. A Web3 Provider knows how to talk to a running node.
+7) In Remix, visit the Environment selection box and choose "Ganache Provider". You will be prompted with an "External Node Request" box. Your Ganache Provider Endpoint is http://localhost:7545. See the Ganache user interface and verify the port (7545) is correct. A Web3 Provider knows how to talk to a running node.
 
 8) In the next step, the Solidity contract will be deployed to Ganache.
 
@@ -442,3 +442,15 @@ One zip file named Lab2.zip will be submitted on Canvas for grading.
 Penalty for any late  work
 ==========================
 + -1 point per day late
+
+
+## FAQ's
+
+### When I do `web3.isConnected()`, it gives `false`. What do I do? 
+
+Ensure that Ganache is up before running `truffle console`. This is a common issue,
+and can be remediated by restarting `truffle console`.
+
+### My Balances from truffle console and Ganache UI don't match up. What gives?
+
+https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html#id49
