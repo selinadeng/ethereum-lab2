@@ -5,7 +5,7 @@
 ### Lab Assistance provided by Michael McCarthy, Abhraneil Chandra, and Arjun Brar
 ### McCarthy Email: mm6@andrew.cmu.edu
 ### Chandra Email: abhranec@andrew.cmu.edu
-#### Arjun Email: abrar@andrew.cmu.edu
+### Arjun Email: abrar@andrew.cmu.edu
 
 
 **Learning Objectives:** The objectives of this lab are to familiarize the student
