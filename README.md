@@ -1,11 +1,12 @@
-## Spring 2022 Developing Blockchain Use Cases Lab 2                             
+## Fall 2022 Blockchain and SQL Fundamentals                         
 ### Carnegie Mellon University                  
-### Due: 11:59 PM Monday, April 11, 2022                                
+### Due: 11:59 PM Wednesday, September 14, 2022                                
 ### 20 Points
-### Lab Assistance provided by Michael McCarthy, Abhraneil Chandra
+### Lab Assistance provided by Michael McCarthy, Abhraneil Chandra, and Arjun Brar
 ### McCarthy Email: mm6@andrew.cmu.edu
 ### Chandra Email: abhranec@andrew.cmu.edu
-### Zoom URL: See Canvas and look under "Pages".
+#### Arjun Email: abrar@andrew.cmu.edu
+
 
 **Learning Objectives:** The objectives of this lab are to familiarize the student
 
@@ -446,7 +447,7 @@ Penalty for any late  work
 
 ## FAQ's
 
-### When I do `web3.isConnected()`, it gives `false`. What do I do? 
+### When I do `web3.isConnected()`, it gives `false`. What do I do?
 
 Ensure that Ganache is up before running `truffle console`. This is a common issue,
 and can be remediated by restarting `truffle console`.
