@@ -1,23 +1,18 @@
-## Fall 2022 Blockchain and SQL Fundamentals                         
+## Spring 2023 Developin Blockchain Use Cases                         
 ### Carnegie Mellon University                   
-### Due: 11:59 PM Monday, September 19, 2022                               
+### Due: 11:59 PM Monday, April 19, 2023                               
 ### 20 Points
-### Lab Assistance provided by Michael McCarthy, Abhraneil Chandra, and Arjun Brar
-### McCarthy Email: mm6@andrew.cmu.edu
-### Chandra Email: abhranec@andrew.cmu.edu
-### Arjun Email: abrar@andrew.cmu.edu
+### Lab Assistance provided by Michael McCarthy, Atharva Joshi, and Nikita Vignesh Kumar
+### See Office Hours on Piazza
 
 
 **Learning Objectives:** The objectives of this lab are to familiarize the student
 
 with some important Ethereum tools and to develop a detailed understanding
 
-of an ERC20 token contract.
-
-
+of an ERC20 token contract. ERC20 is a standard interface that is used by a wide variety DeFi (Decentralized Finance) contracts.
 
 We will be reviewing the ERC20 contract in class.
-
 
 
 ## Lab2 Outline
@@ -57,7 +52,7 @@ running in a browser and our own browser based application.
    Visit https://remix.ethereum.org/
  and run Remix in the same browser where you installed your Metamask wallet.
 
-   The Metamask wallet was installed in Lab 1.
+   The Metamask wallet was installed in step 2 of Lab 1.
 
 
 3) In Remix, choose Solidity and create a new file named "NameValue.sol". Be careful to choose a compiler version that is supported by the code ( solidity >=0.4.22 <0.6.0 )
