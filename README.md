@@ -10,7 +10,8 @@
 
 with some important Ethereum tools and to develop a detailed understanding
 
-of an ERC20 token contract. ERC20 is a standard interface that is used by a wide variety DeFi (Decentralized Finance) contracts.
+of an ERC20 token contract. ERC20 is a standard interface that is used by a wide variety 
+of decentralized finance (DeFi) contracts.
 
 We will be reviewing the ERC20 contract in class.
 
