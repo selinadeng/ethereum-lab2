@@ -1,6 +1,6 @@
 ## Spring 2023 Developin Blockchain Use Cases                         
 ### Carnegie Mellon University                   
-### Due: 11:59 PM Monday, April 19, 2023                               
+### Due: 11:59 PM Monday, April 10, 2023                               
 ### 20 Points
 ### Lab Assistance provided by Michael McCarthy, Atharva Joshi, and Nikita Vignesh Kumar
 ### See Office Hours on Piazza
