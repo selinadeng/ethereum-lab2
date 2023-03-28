@@ -148,11 +148,13 @@ Follow these steps before deployment:
 4. Change your compiler version to 0.5.1
 5. Next, go into your truffle-config.js file and change your solc compiler to 0.5.1
    It should look a little something like this: 
+   ```
    compilers: {
        solc: {
          version: "0.5.1", 
        }
      },
+    ```
  6. All the errors should be gone 
 
 Notice the data that we are passing to the constructor upon deployment.
