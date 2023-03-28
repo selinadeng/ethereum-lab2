@@ -140,6 +140,21 @@ and by
 
 There is one significant difference in this deployment. The MyAdvancedToken contract has a constructor that is passed arguments. So, we will use [this file for 2_deploy_migrations.js.](../../blob/master/Lab2PartB/2_deploy_migrations.js)
 
+
+Follow these steps before deployment: 
+1. Replace pragma solidity … statement with pragma solidity 0.5.1;
+2. Right click anywhere on the code in the MyAdvancedToken.sol file. 
+3. Click the “Solidity: Change workspace compiler version (Remote)” option. 
+4. Change your compiler version to 0.5.1
+5. Next, go into your truffle-config.js file and change your solc compiler to 0.5.1
+   It should look a little something like this: 
+   compilers: {
+       solc: {
+         version: "0.5.1", 
+       }
+     },
+ 6. All the errors should be gone 
+
 Notice the data that we are passing to the constructor upon deployment.
 
 Once deployed, you will need to answer the following questions by using
